@@ -139,7 +139,7 @@ if (this.state.loading === false) {  Ans = this.state.comments.map(item =>
               </p>
             </small>
             <Card.Text>
-              <br />
+            
               <h5>{this.state.data.description}</h5>
             </Card.Text>
           </Card.Body>

@@ -50,10 +50,10 @@ if (this.state.loading === false) {  Questions = this.state.data.map(item =>
       <span style={{float:"left",color:"black"}} className="category"> {"  "+item.tags + "  "} </span>
     </div>
     <div style={{float:"left"}} className="description">
-      <p>
+    
          {item.description.substring(0,110) + "..."}
            <span ><NavLink  style={{color:"blue",border:"none"}} to={`/post/${item._id}`}>more</NavLink></span>
-      </p> 
+     
     
     </div> 
   </div>
@@ -123,11 +123,10 @@ if (this.state.loading === false) {  Questions = this.state.data.map(item =>
     </Card.Text>
     <Card.Title> _______  </Card.Title>
     <Card.Text>
-       <div>
+    
 
-{console.log(this.state.data)}
    <ButtonToolbar>
-    {
+    
       <SplitButton
         drop={`right`}
         variant="light"
@@ -138,9 +137,9 @@ if (this.state.loading === false) {  Questions = this.state.data.map(item =>
         <Dropdown.Item eventKey="1">popular</Dropdown.Item>
         <Dropdown.Item eventKey="2">newest</Dropdown.Item>
       </SplitButton>
-    }
+    
   </ButtonToolbar>
-</div>
+
     
     
      </Card.Text>
